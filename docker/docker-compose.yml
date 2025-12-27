@@ -1,0 +1,13 @@
+services:
+  matrix-architect:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - CORS_ORIGINS=*
+      - LITELLM_MODEL=${LITELLM_MODEL:-gpt-4o-mini}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+    volumes:
+      - ../data:/app/data
