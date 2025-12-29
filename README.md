@@ -821,24 +821,16 @@ This project is licensed under the **Apache License 2.0** - see the [LICENSE](LI
 
 ## 🎯 Roadmap
 
-### v2.1 - Enhanced Intelligence (Q1 2025)
-
 - [ ] 🔌 GraphQL API for flexible queries
 - [ ] 🔄 WebSocket support for real-time updates
 - [ ] ⏰ Advanced scheduling with cron support
 - [ ] 🏢 Multi-tenancy support
 - [ ] 🧠 Enhanced AI planning with GPT-4+
-
-### v2.2 - Advanced Autonomy (Q2 2025)
-
 - [ ] 🤖 Machine learning for plan optimization
 - [ ] 🔧 Self-healing capabilities
 - [ ] 🎯 Canary deployments
 - [ ] 🧪 Integration testing framework
 - [ ] 📊 Advanced analytics dashboard
-
-### v3.0 - Full Autonomy (Q3 2025)
-
 - [ ] 🌍 Multi-region support
 - [ ] 🔄 Auto-scaling based on AI predictions
 - [ ] 🛡️ Advanced policy engine with ML
