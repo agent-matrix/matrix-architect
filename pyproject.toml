@@ -50,17 +50,18 @@ dependencies = [
 dev = [
   "ruff>=0.6",
   "pytest>=8.2",
+  "pytest-asyncio>=0.23.0",
   "build>=1.2.1",
 ]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
 
 [project.scripts]
 matrix-architect = "matrix_architect.cli.main:app"
 
-[tool.setuptools]
-package-dir = {"" = ""}
-
 [tool.setuptools.packages.find]
-where = ["."]
 include = ["matrix_architect*"]
 
 [tool.ruff]
