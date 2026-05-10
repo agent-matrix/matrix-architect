@@ -1,0 +1,18 @@
+schema_version: "0.1"
+repo:
+  owner: "agent-matrix"
+  name: "matrix-architect"
+  full_name: "agent-matrix/matrix-architect"
+  role: "executor"
+alive: { participates: true, contracts_version: "0.2" }
+maintenance:
+  maintainer: "matrix-maintainer"
+  repair_enabled: true
+  repair_constraints: [pr_only, run_tests, sandbox]
+governance:
+  risk_level: high
+  requires_approval: true
+  approver: "matrix-guardian"
+economics: { budget_aware: true, reporter: "matrix-treasury" }
+events: { emitted: [], consumed: [] }
+health: { type: "http", endpoint: "/health", command: "" }
