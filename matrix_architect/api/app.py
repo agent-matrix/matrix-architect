@@ -7,6 +7,7 @@ from .routes_plan import router as plan_router
 from .routes_execute import router as execute_router
 from .routes_jobs import router as jobs_router
 from .routes_artifacts import router as artifacts_router
+from .routes_compile import router as compile_router
 
 app = FastAPI(title="Matrix Architect", version="0.1.0")
 
@@ -22,3 +23,4 @@ app.include_router(plan_router, prefix="/plan", tags=["plan"])
 app.include_router(execute_router, prefix="/execute", tags=["execute"])
 app.include_router(jobs_router, prefix="/jobs", tags=["jobs"])
 app.include_router(artifacts_router, prefix="/artifacts", tags=["artifacts"])
+app.include_router(compile_router, prefix="/v2", tags=["compile"])
